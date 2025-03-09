@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 14px;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 832px;
+    margin: 0 auto;
+}
+
+main{
+    background-color: #f8f9fA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color:#E34234;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color:#f8f9fA ;
+    font-size: 32px;
+    margin: 0;
+    padding: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 832px;
+    background-color: #212529 ;
+    border: 14px /*dotted|dashed|grooved*/ dotted #E34234
+}
+
+h4{
+    font-size: 1.8rem;
+    border-bottom: 4px dotted #E34234;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+footer{
+    color:#f8f9fA ;
+    font-size: 14px;
+}
+
+.pointy{
+    background-color: #E3423444;
+    display: block;
+    height: 3rem;
+}
+
+.round{
+    background-color: #7fffd444;
+    display: inline-block;
+}
+
+#idea{
+    background-color: #E3423422;
+
+}
+
+.to-right{
+    float: right;
+    padding: 14px;
+}
+
+#concept{
+    text-align: justify;
+}

@@ -1,0 +1,101 @@
+<!--⭐starter⭐-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--⭐connecting JavaScript and CSS to HTML⭐-->
+    <script src="basic.js"></script>
+    <link rel="stylesheet" href="css1/styles1.css">
+    <!--⭐connecting JavaScript and CSS to HTML⭐-->
+
+    <title>inspo</title>
+</head>
+<!--⭐starter⭐-->
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <a href="https://www.safehavenhq.com/">See Inspiration</a>
+            </div>
+        </nav>
+        <h1>bI</h1>
+    </header>
+
+    <main>
+        <img class="to-right" src="mimi.jpg" alt="Color Theory" />
+        <p>Creating a personal style</p>
+        <pre>explore | discover | learn</pre>
+        <strong>Seek Bold</strong>
+        <br>
+        <em>Seek Different</em>
+        <br>
+        <a href="https://www.joshwarner.design/">Check out more inspiration</a>
+        <br>
+        <p id="concept">black white shadows light transparency gray dark bright metallic 
+            grey non-colors shapes lines dots square rectangle small big thin 
+            characters symbols details geometric bold hexagon octagon dotted-images
+            glitch effects fast flashing
+        </p>
+        <h4>Main Colors</h4>
+        <ol>
+            <li>Black</li>
+            <li>White</li>
+            <li>Gray</li>
+        </ol>
+        <h4>Main Shapes</h4>
+        <ul>
+            <li><span class="pointy">Square</span></li>
+            <li><span class="round">Circle</span></li>
+            <li><span class="pointy">Triangle</span></li>
+            <li><span class="pointy">Rectangle</span></li>
+            <li><span class="pointy">Diamond</span></li>
+            <li><span class="pointy">Hexagon</span></li>
+        </ul>
+        <!--User does not see this-->
+        <table>
+            <thead>
+                <tr><th>Elements</th><th>Preference</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Geometric Fonts</td><td>4</td></tr>
+                <tr><td>Dotted Images</td><td>3</td></tr>
+                <tr><td>Symbols</td><td>4</td></tr>
+            </tbody>
+        </table>
+        
+        <h4>Contribute</h4>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Send Idea</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Character name">
+                <label for="flavour">Flavour:</label>
+                <input type="text" name="flavour" id="flavour" placeholder="Character flavour">
+                <label for="age">Age:</label>
+                <input type="range" name="age" id="age" min="0" max="10000">
+            </fieldset>
+            <br/>
+            <label for="credit">Hair Colour:</label>
+            <select id="credit" name="credit">
+                <option value="original">Original</option>
+                <option value="inspired">Inspired</option>
+            </select>
+            <br/>
+            <textarea name="idea" id="idea" rows="10" cols="30" placeholder="Write idea here"></textarea>
+            <br/>
+            <button id="send-idea" type="button">Send Idea</button>
+            <button id="remove-idea" type="button">Remove Idea</button>
+        </form>
+        <div id="ideas"></div>
+    </main>
+
+    <footer> 
+        <p>Seek the <span class="black">Truth</span></p>
+    </footer>
+
+</body>
+</html>

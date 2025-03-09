@@ -1,0 +1,97 @@
+:root {
+    --unit: 20px;
+    --container-width: 100%;
+    --blue: #7700ff;
+    --yellow: #a6ff00;
+}
+
+body {
+    margin:0;
+    padding-top:50px;
+}
+
+.container {
+    position: relative;
+    width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--unit);
+    overflow: hidden;
+}
+
+.row {
+    height: calc(var(--unit)*2);
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--unit)/2);
+    animation-name: slide;
+    --duration: 12s;
+    animation-duration: calc(var(--duration) * 2);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.row:nth-child(2n) {
+    --direction: -1;
+    --duration: 6s;
+}
+
+.row:nth-child(3n) {
+    --direction: -1;
+    --duration: 4s;
+}
+
+.row:nth-child(4n) {
+    --direction: 1;
+    --duration: 3s;
+}
+
+.row:nth-child(5n) {
+    --direction: -1;
+    --duration: 2s;
+}
+
+.row:nth-child(6n) {
+    --direction: 1;
+    --duration: 1s;
+}
+
+@keyframes slide {
+    0% {translate: 0;}
+    40% {translate: 0;}
+    55% {translate: calc(var(--container-width) * var(--direction, 1));}
+    70% {translate: 0;}
+    85% {translate: calc(var(--container-width) * var(--direction, 1) * -1);}
+    100% {translate: 0;}
+}
+
+.cell {
+    height: 100%;
+    width:calc(var(--size, 2) * var(--unit) * 3.5);
+    border-radius: var(--unit);
+}
+
+.cell.size-1 {
+    --size: 12;
+}
+
+.cell.size-2 {
+    --size: 6;
+}
+
+.cell.size-3 {
+    --size: 4;
+}
+
+.cell.size-4 {
+    --size: 3;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+

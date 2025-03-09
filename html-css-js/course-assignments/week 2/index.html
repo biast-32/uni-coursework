@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <h1>User database</h1>
+</head>
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>email</th>
+                <th>Admin</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>Webmaster</td>
+                <td>example@email.com</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>User123</td>
+                <td>example@email.com</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>AnotherUser222</td>
+                <td>example@email.com</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Add custom data</h2>
+    <form id="addCustomData">
+        <div>
+            <label for="input-username">Username</label>
+            <input type="text" id="input-username" name="input-username" required>
+        </div>
+        <div>
+            <label for="input-email">Email</label>
+            <input type="text" id="input-email" name="input-email" required>
+        </div>
+        <div>
+            <label for="input-admin">Admin</label>
+            <input type="checkbox" id="input-admin" name="input-admin" required>
+        </div>
+        <div>
+            <label for="input-image">Image</label>
+            <input type="file" id="input-image" name="input-image" accept="jpg/*" 
+            width="64" height="64">
+            <button id="upload">Upload</button>
+        </div>
+    </form>
+    <br>
+    <button id="submit-data">Submit data</button>
+    <button id="empty-table">Empty table</button>
+    <br>
+</body>
+</html>
